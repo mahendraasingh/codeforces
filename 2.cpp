@@ -1,8 +1,13 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int n,m;
-    cin>>n>>m;
-    cout<<(n*m)/2;
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        long long a, b;
+        cin >> a >> b;
+        long long ans = min({a, b, (a + b) / 3});
+        cout << ans << endl;
+    }
     return 0;
 }
